@@ -104,13 +104,27 @@ if __name__ == '__main__':
     aa = list_int[0][0] # No of test cases
     #print(aa)
     if aa > 1:# when more than 1 test case is present
-        pass
+        finall_rices_of_all_inputs = []
+        cc = list_int.pop(0)
+        #print(aa)
+        print(list_int)
+        j=0
+        ii=0
+        while ii < aa:
+            dd = list_int[j:j+3]
+            print(dd)
+            ee = maxPrice(dd)
+            finall_rices_of_all_inputs.append(ee)
+            j+=3
+            ii+=1
+
+
     else: # when test case is 1
         ab = list_int[1:4]
         #print(ab)
-        cc = maxPrice(ab)
+        finall_rices_of_all_inputs = maxPrice(ab)
     
-    print("Total price is:", + cc)
+    print( finall_rices_of_all_inputs)
     
 
 
