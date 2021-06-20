@@ -107,12 +107,12 @@ if __name__ == '__main__':
         finall_rices_of_all_inputs = []
         cc = list_int.pop(0)
         #print(aa)
-        print(list_int)
+        #print(list_int)
         j=0
         ii=0
         while ii < aa:
             dd = list_int[j:j+3]
-            print(dd)
+            #print(dd)
             ee = maxPrice(dd)
             finall_rices_of_all_inputs.append(ee)
             j+=3
@@ -124,7 +124,15 @@ if __name__ == '__main__':
         #print(ab)
         finall_rices_of_all_inputs = maxPrice(ab)
     
-    print( finall_rices_of_all_inputs)
+    #print( finall_rices_of_all_inputs)
+    fileOp = open("outputPS9.txt","w+")
+    for item in (finall_rices_of_all_inputs):
+        fileOp.write(str(item))
+        fileOp.write('\n')
+        #fileOp.write('\n')
+
+    
+    
     
 
 
