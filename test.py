@@ -102,6 +102,7 @@ if __name__ == '__main__':
     #print(list_int)
 
     aa = list_int[0][0] # No of test cases
+    finall_rices_of_all_inputs = []
     #print(aa)
     if aa > 1:# when more than 1 test case is present
         finall_rices_of_all_inputs = []
@@ -122,12 +123,12 @@ if __name__ == '__main__':
     else: # when test case is 1
         ab = list_int[1:4]
         #print(ab)
-        finall_rices_of_all_inputs = maxPrice(ab)
+        finall_rices_of_all_inputs.append(maxPrice(ab))
     
     #print( finall_rices_of_all_inputs)
     fileOp = open("outputPS9.txt","w+")
-    for item in (finall_rices_of_all_inputs):
-        fileOp.write(str(item))
+    for jh in range(0,len(finall_rices_of_all_inputs)):
+        fileOp.write(str(finall_rices_of_all_inputs[jh]))
         fileOp.write('\n')
         #fileOp.write('\n')
 
