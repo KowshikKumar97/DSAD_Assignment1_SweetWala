@@ -22,8 +22,11 @@ The first line T denoting the number of test cases. The description of T test ca
 # Sample Input:
 
 1
+
 5 3
+
 8 7 2 6 10
+
 1 5 8 4 8
 
 
